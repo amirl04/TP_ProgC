@@ -53,6 +53,16 @@ int main() {
             break;
 
         case '~':
-            // opération unaire → seulement num1 (
+            // opération unaire → seulement num1 (ou num2 si tu veux)
+            resultat = ~num1;
+            printf("~%d = %d\n", num1, resultat);
+            break;
+
+        default:
+            printf("Erreur : opérateur inconnu '%c'\n", op);
+    }
+
+    return 0;
+}
 
 
